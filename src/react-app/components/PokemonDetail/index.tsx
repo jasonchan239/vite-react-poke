@@ -6,7 +6,6 @@ import { Header } from './components/Header';
 import { PokemonTypes } from './components/PokemonTypes';
 import { Stats } from './components/Stats';
 import { Title } from './components/Title';
-
 import styles from './styles.module.css';
 
 interface Props {
@@ -40,6 +39,7 @@ export const PokemonDetail = ({ pokemon }: Props) => {
           alt={pokemon?.name}
         />
         <PokemonTypes pokemon={pokemon} />
+        <div className={styles.firework}> </div>
         <Title content='About' backgroundSelected={backgroundSelected} />
         <Stats pokemon={pokemon} />
         <Title content='Base Stats' backgroundSelected={backgroundSelected} />

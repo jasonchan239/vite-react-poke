@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import PokemonProvider from './context/PokemonContext';
 import './index.css';
 import { Home, PokemonDetails } from './pages';
+
 const router = createBrowserRouter([
 	{
 		path: '/',
@@ -13,7 +14,6 @@ const router = createBrowserRouter([
 		element: <PokemonDetails />,
 	},
 ]);
-
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 	<PokemonProvider>
 		<RouterProvider router={router} />
